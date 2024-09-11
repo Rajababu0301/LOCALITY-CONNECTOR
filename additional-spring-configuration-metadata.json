@@ -1,0 +1,89 @@
+{
+  "properties": [
+    {
+      "name": "app.custom.property1",
+      "type": "java.lang.String",
+      "description": "A custom property for the application's feature 1",
+      "sourceType": "com.example.config.MyAppConfig",
+      "defaultValue": "defaultValue1"
+    },
+    {
+      "name": "app.custom.property2",
+      "type": "java.lang.Integer",
+      "description": "A custom integer property for setting limits",
+      "sourceType": "com.example.config.MyAppConfig",
+      "defaultValue": 100
+    },
+    {
+      "name": "app.custom.property3",
+      "type": "java.lang.Boolean",
+      "description": "A flag for enabling or disabling a feature",
+      "sourceType": "com.example.config.MyAppConfig",
+      "defaultValue": true
+    },
+    {
+      "name": "app.security.enable",
+      "type": "java.lang.Boolean",
+      "description": "Flag to enable or disable security features",
+      "sourceType": "com.example.security.SecurityConfig",
+      "defaultValue": true
+    },
+    {
+      "name": "app.api.timeout",
+      "type": "java.time.Duration",
+      "description": "Timeout for external API requests",
+      "sourceType": "com.example.api.ApiConfig",
+      "defaultValue": "30s"
+    },
+    {
+      "name": "app.datasource.url",
+      "type": "java.lang.String",
+      "description": "The JDBC URL for the application's database",
+      "sourceType": "com.example.datasource.DataSourceConfig",
+      "defaultValue": "jdbc:mysql://localhost:3306/LocalityConnector"
+    },
+    {
+      "name": "management.endpoint.health.show-details",
+      "type": "java.lang.String",
+      "description": "A description for 'management.endpoint.health.show-details'"
+    },
+    {
+      "name": "management.endpoints.web.exposure.include",
+      "type": "java.lang.String",
+      "description": "A description for 'management.endpoints.web.exposure.include'"
+    },
+    {
+      "name": "app.custom.another-property",
+      "type": "java.lang.String",
+      "description": "A description for 'app.custom.another-property'"
+    }
+  ],
+  "hints": [
+    {
+      "name": "app.custom.property1",
+      "values": [
+        {
+          "value": "value1",
+          "description": "Option 1 for property 1"
+        },
+        {
+          "value": "value2",
+          "description": "Option 2 for property 1"
+        }
+      ]
+    },
+    {
+      "name": "app.custom.property3",
+      "values": [
+        {
+          "value": true,
+          "description": "Enable the feature"
+        },
+        {
+          "value": false,
+          "description": "Disable the feature"
+        }
+      ]
+    }
+  ]
+}
